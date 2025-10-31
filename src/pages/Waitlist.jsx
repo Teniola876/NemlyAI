@@ -118,8 +118,8 @@ const Waitlist = () => {
               whileInView='visible'
               viewport={{ once: true }}
             >
-              {[1, 2, 3].map((_, i) => (
-                <motion.div key={i} variants={fadeInUp} className='border border-gray-300 rounded-lg max-w-sm p-5 col-span-1'>
+              {/* {[1, 2, 3].map((_, i) => ( */}
+                <motion.div variants={fadeInUp} className='border border-gray-300 rounded-lg max-w-sm p-5 col-span-1'>
                   <div className='text-xl font-medium'>Free</div>
                   <div className='my-3'>
                     <span className='text-5xl font-medium'>0</span> <span className='text-lg font-medium'>/month</span>
@@ -131,7 +131,32 @@ const Waitlist = () => {
                     <div className='flex space-x-4 items-center'><FaCheck /> <div>Basic Invoice Management</div></div>
                   </div>
                 </motion.div>
-              ))}
+
+                <motion.div  variants={fadeInUp} className='border border-gray-300 rounded-lg max-w-sm p-5 col-span-1'>
+                  <div className='text-xl font-medium'>Free</div>
+                  <div className='my-3'>
+                    <span className='text-5xl font-medium'>3000</span> <span className='text-lg font-medium'>/month</span>
+                  </div>
+                  <button className="w-full py-3 rounded-xl font-medium bg-gray-200">Choose Free</button>
+                  <div className='my-5 space-y-3'>
+                    <div className='flex space-x-4 items-center'><FaCheck /> <div>Basic Content Ideas</div></div>
+                    <div className='flex space-x-4 items-center'><FaCheck /> <div>Limited Marketing Tips</div></div>
+                    <div className='flex space-x-4 items-center'><FaCheck /> <div>Basic Invoice Management</div></div>
+                  </div>
+                </motion.div>
+                <motion.div variants={fadeInUp} className='border border-gray-300 rounded-lg max-w-sm p-5 col-span-1'>
+                  <div className='text-xl font-medium'>Free</div>
+                  <div className='my-3'>
+                    <span className='text-5xl font-medium'>5000</span> <span className='text-lg font-medium'>/month</span>
+                  </div>
+                  <button className="w-full py-3 rounded-xl font-medium bg-gray-200">Choose Free</button>
+                  <div className='my-5 space-y-3'>
+                    <div className='flex space-x-4 items-center'><FaCheck /> <div>Basic Content Ideas</div></div>
+                    <div className='flex space-x-4 items-center'><FaCheck /> <div>Limited Marketing Tips</div></div>
+                    <div className='flex space-x-4 items-center'><FaCheck /> <div>Basic Invoice Management</div></div>
+                  </div>
+                </motion.div>
+              {/* ))} */}
             </motion.section>
           </motion.div>
         </main>
